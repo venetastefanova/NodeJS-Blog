@@ -1,0 +1,35 @@
+<% allPosts.forEach(function(post) {%>
+    
+<div class="pag">
+
+
+<div class="border col-sm-12">
+<div class="blog-list">
+          <div class="blog-post">
+             <div class="col-md-6 col-sm-12 blog-post-half">
+                 <a href="/"><img src="<%=post.image%>"></a>
+             </div>
+             <div class="col-md-6 col-sm-12 blog-post-half">
+                 <div class="inner">
+                     
+                     <h3 class="post-date">
+                             <p><%=post.publishdate%> -
+                             <a href="/author-page"><%=post.author%></a></p>
+                     </h3>
+                     <h2 class="post-title">
+                         <a href="/blog-page"><%=post.title%></a>
+                     </h2>
+                     <p class="post-body">
+                             <%- post.content.substring(0,100)%>...
+                         </p>
+                     <a href="/blog-posts/<%= post._id %>">Lue artikkeli</a>
+                     <div class="post-tags"></div>
+                 </div>
+             </div>
+         </div>
+     </div> 
+</div>
+<em> 
+</em>
+</div>
+<%});%>

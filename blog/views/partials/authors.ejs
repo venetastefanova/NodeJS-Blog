@@ -1,0 +1,22 @@
+<div class="col-sm-12">
+    <div class="author-list">
+        <div class="list-header">
+            <h3>Kaikki kirjoittajat</h3>
+        </div>
+        <ul class="author-listing">
+          <% for (var i=0; i< authorsGroup.length; i++){ %>           
+            <li class="listing-item">
+                <div class="half-block img">
+                    <img src="<%= authorsGroup[i]._id.picture%>">
+                </div>
+                <div class="half-block">
+                    <a href="/author-page" title="Kirjoittaja" class="author-name"><%=authorsGroup[i]._id.name%></a>
+                    <br>
+                    <a href="/author-page" title="Kirjoittaja" class="author-link">Tutustu</a>
+                </div>
+            </li>
+            <% } %>
+        </ul>
+
+    </div>
+</div>

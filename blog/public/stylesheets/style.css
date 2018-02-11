@@ -1,0 +1,403 @@
+/* General CSS */
+
+body {
+  font: 16px "Open Sans", Helvetica, Arial, sans-serif;
+    overflow-y: scroll;
+    background-color: #e9e9e9;
+    line-height: 140%;
+}
+
+a {
+  color: rgb(243, 109, 33);
+}
+
+a:hover {
+    color: rgb(150, 75, 33);
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 797px) {
+    body { 
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.bg-orange {
+    background-color: rgb(243, 109, 33);
+}
+
+/* Navigation Bar */
+
+.navbar {
+    padding: 0 10px 0 10px;
+    font-size: 14px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: rgb(243, 109, 33);
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: rgb(150, 75, 33);
+}
+
+/* Posts */
+
+ .blog-post-half {
+    display: inline-block;
+    width: 50%;
+    margin: 0px;
+    float: left;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+.blog-post-half {
+    display: inline-block;
+    width: 100% !important;
+    margin: 0px;
+    clear: both;
+    text-align: center;
+    }
+}
+.blog-post-half .inner {
+    display: inline-block;
+    width: 90%;
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+.blog-post-half .inner {
+    display: inline-block;
+    width: 100% !important;
+    text-align: left;
+    margin-top: 20px;
+    }
+}
+
+.post-date {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 0px;
+}
+
+.post-title, .post-title a {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+}
+
+.divider {
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0px;
+    border-bottom: 1px solid black;
+}
+
+/* Title Header */
+
+.header {
+    background-image: url(/images/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 60px 0px 70px 0px;
+    margin: -20px auto 30px auto;
+}
+
+.header h1 {
+    font-size: 80px;
+    font-weight: 800;
+    letter-spacing: -8px;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+}
+
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+
+#link-title {
+    text-decoration: none;
+}
+
+/* Newsletter Box*/
+
+.newsletter-box-title h3 {
+    margin: 0;
+    padding: 15px;
+    font-weight: 400;
+}
+
+.newsletter-box-body p {
+    padding: 15px;
+}
+
+.newsletter-box {
+    display: block;
+    width: 100%;
+    float: left;
+    background-color: #000;
+    margin-bottom: 20px;
+}
+
+/* Categories box */
+
+.category-list {
+    display: inline-block;
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: rgb(182, 182, 182);
+    box-sizing: border-box;
+}
+
+#categories {
+    padding: 0px;
+}
+
+.category-list ul li {
+    display: inline;
+}
+
+.category a {
+    color: #5a5a5a;
+}
+
+/* Author List Box */
+
+.author-list {
+    margin: 0 0 10px 0;
+    padding: 10px;
+    background-color: rgb(182, 182, 182);
+    box-sizing: border-box;
+}
+
+.list-header h3 {
+    font-size: 26px;
+    font-weight: normal;
+    padding: 0px 10px;
+    color: rgb(90, 90, 90);
+}
+
+.author-listing {
+    padding: 10px;
+}
+
+.author-listing li.listing-item {
+    display: inline-block;
+    width: 100%;
+    list-style-type: none;
+    box-sizing: border-box;
+    border-bottom: 1px solid #FFF;
+}
+
+.author-listing li.listing-item:last-child {
+    border-bottom: 0px solid #FFF;
+}
+
+.author-list img {
+    width: 150px;
+    max-width: 100%;
+}
+
+.author-listing .half-block {
+    padding: 10px;
+}
+
+.half-block.img {
+    padding: 0px;
+}
+
+.half-block {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    margin: 20px 0px;
+}
+
+.author-listing .author-name {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(90,90,90);
+}
+
+/* Blog Post Box */
+
+.blog-post {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #FFF;
+    padding: 20px 0px;
+}
+
+.blog-post-wrapper h2.blog-post-title {
+    font-size: 30px;
+    font-weight: 800;
+    padding: 0px 0px 5px 0px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.pag:last-child {
+    border-bottom: 0px solid #FFF;
+}
+
+
+/* About Author */
+
+.about-me-wrapper {
+    background-color: #b6b6b6;
+    float: left;
+    width: 100%;
+    color: #FFF;
+}
+
+.about-me-wrapper span {
+    font-size: 18px;
+    padding: 15px 15px 0px 15px;
+}
+
+.about-me-wrapper span, .about-me-wrapper h3, .about-me-wrapper p {
+    padding: 15px;
+    display: inline-block;
+    width: 100%;
+}
+
+.about-me-wrapper h3 {
+    margin: 0px;
+    font-weight: 400;
+    font-size: 26px;
+    padding-top: 0px;
+    color: #5a5a5a;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.about-me-wrapper a {
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px;
+}
+
+/* About Us Page */
+
+.about-image {
+    width: 90%;
+}
+
+.about-us {
+    margin-bottom: 20px;
+}
+
+.about-us h1 {
+    font-weight: 200;
+    line-height: 1;
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+.about-us p {
+    line-height: 2;
+    margin-left: 3px;
+}
+
+/* Contact Page */
+
+.contact {
+    margin-top: 50px;
+}
+
+.contact h3 {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0px 0px;
+    margin: 0 auto 0 auto;
+    color: rgb(130, 130, 130);
+}
+
+.contact p {
+    padding: 5px 0px;
+}
+
+/* Footer */
+
+.footer-divider {
+    background-color: rgb(130, 130, 130);
+    padding: 40px;
+}
+
+.footer .container {
+    padding: 30px 0px;
+}
+
+.footer {
+    background-color: #fff;
+    color: rgb(138, 138, 138);
+    margin-top: 70px;
+}
+
+.footer h3 {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0px 0px;
+    margin: 0px;
+    color: rgb(130, 130, 130);
+}
+
+.footer p {
+    padding: 5px 0px;
+}
+
+.footer .container-fluid {
+    padding-left: 15px;
+}
+
+.whole-body {
+    padding: 40px 0px;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#introduction-author-title {
+    text-transform: uppercase;
+    font-size: 54px;
+}
+
+#author-last-post {
+    font-size: 25px;
+    margin: 30px 0 0px !important;
+    color: #5a5a5a;
+}

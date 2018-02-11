@@ -1,0 +1,21 @@
+<div class="col-sm-12">
+    <div class="author-list">
+        <div class="list-header">
+            <h3>Viimeisimmät kirjoitukset</h3>
+        </div>
+        <ul class="author-listing">
+        <% lastAdded.forEach(function(lastPost){ %>                    
+            <li class="listing-item">
+                <div class="half-block img">
+                    <a href="/blog-page">
+                        <img src="<%=lastPost.image%>">
+                    </a>
+                </div>
+                <div class="half-block">
+                    <a href="/blog-page" id="post-title" class="author-name"><%=lastPost.title%></a>
+                </div>
+            </li> 
+            <%});%>
+        </ul>
+    </div>
+</div>
